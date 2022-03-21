@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+    <section>
+<h1>clase 6</h1>
+     <fieldset>
+    <legend>
+        Alta de usuario 
+    </legend>
+    <form action="AltaUsuario.html" method="POST">
+        <input type="file" name="dni-frente" required>
+        <input type="hidden" value="valoroculto" name="campoHidden">
+        <input type="url" name="url" required placeholder="ej http://dominio.com.ar">
+        <input type="text" name="nombre" required placeholder="ingrese algo">
+        <input type="text" required pattern="[0-9]" title="solo numeros de 0 a 9" placeholder="valores de 0 y 9">
+        <br>
+        <textarea name="info-extra" cols="50" rows="5"></textarea>
+        <hr>
+        <select name="selctMultiple" multiple required>
+            <optgroup label="Animales">
+                <option>León</option>
+                <option>Tigre</option>
+            </optgroup>
+            <optgroup label="colores">
+                <option>rojo</option>
+                <option>verde</option>
+                <option>azul</option>
+            </optgroup>
+        </select>
+        <br>
+        <input list="browser" name="databrowser">
+        <datalist id="browser">
+            <option>EDGE</option>
+            <option>Chrome</option>
+            <option>Firefox</option>
+            <option>Opera</option>
+        </datalist>
+        <br>
+        <label for="buscar">tipo search</label>
+        <input type="search" name="buscar"/>
+        <br>
+        <label for="buscar">tipo text</label>
+        <input type="text" name="buscarText"/>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+     </fieldset>
+    </section>
+ </main>
+</body>
+</html>
